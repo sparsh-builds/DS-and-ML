@@ -1,0 +1,770 @@
+Statistics: The Foundation of Data Science & Analytics
+
+comments
+Statistics helps us collect, understand and make sense of data. From spotting trends to making predictions, statistics gives us the tools to turn raw numbers into useful insights. In data science, whether you are building models or making decisions, statistics is there at every step. Learning statistics is the first step to thinking clearly and solving problems with data.
+
+rural.webprural.webp
+probabilities_of_stock_investing.webpprobabilities_of_stock_investing.webp
+Basic Statistical Terms
+1. Data: Data refers to facts, numbers or observations collected for analysis. It can be anything from customer purchase records to temperature readings. Data is the raw material that statisticians and data scientists work with to uncover patterns and insights.
+
+2. Variable : Variables are the building blocks of statistical analysis. They help us define what we’re measuring and how we’ll analyze it. Variables are classified into two main types:
+
+Quantitative Variables: Numerical data that can be measured (e.g., age, income, temperature).
+Qualitative Variables: Categorical data that describes qualities (e.g., gender, color, product type).
+3. Population: Complete set of individuals, objects or data points of interest in a study.
+
+4. Sample : Subset of the population selected for analysis. It’s used when studying the entire population is impossible or unnecessary. For instance, instead of measuring the height of every adult in a country, you might measure the height of 1,000 adults and use that data to infer information about the entire population.
+
+5. Parameter: Numerical value that describes a characteristic of a population. For example, the average income of all households in a city is a parameter. Parameters are often unknown and are estimated using sample data.
+
+6. Statistic: Numerical value that describes a characteristic of a sample. For example, the average income of 100 households surveyed in a city is a statistic. Statistics are used to estimate parameters and make inferences about populations.
+
+Types of Statistics
+stat
+Flow chart of type of statistics
+1. Descriptive Statistics
+Descriptive statistics summarize and describe the main features of a dataset. They provide simple summaries about the sample and help us understand the data’s central tendency, variability and distribution. Key measures include:
+
+Measures of Central Tendency: Mean, median and mode.
+Measures of Variability: Range, variance and standard deviation.
+Measures of Frequency Distribution: Histograms, frequency tables.
+Descriptive statistics are essential for organizing and simplifying data, making it easier to interpret.
+
+2. Inferential Statistics
+Inferential statistics allow us to make predictions or inferences about a population based on sample data. They help us generalize findings from a sample to a larger population. Inferential statistics are crucial for drawing conclusions and making data-driven decisions.
+
+Types of Data
+types_of_data
+Types of Data
+1. Quantitative Data
+Quantitative data consists of numerical values that can be measured. It is further divided into:
+
+Discrete Data: Countable values that cannot be divided into smaller parts (e.g., number of students in a class, number of cars in a parking lot).
+Continuous Data: Measurable values that can take any value within a range (e.g., height, weight, temperature).
+2. Qualitative Data
+Qualitative data describes qualities or characteristics and is non-numerical. It is further divided into:
+
+Nominal Data: Categories without any inherent order (e.g., gender, color, types of fruits).
+Ordinal Data: Categories with a meaningful order or ranking (e.g., education levels, customer satisfaction ratings).
+Qualitative data is often used for categorization and is analyzed using frequency counts or percentages.
+
+Levels of Measurement Explained
+The level of measurement determines how data can be analyzed and what statistical techniques are appropriate. There are four levels:
+
+the_four_level_of_measu
+Four level of measurement
+1. Nominal Level
+Nominal data is the simplest level of measurement. It involves categorizing data into distinct groups or labels without any order or ranking. Examples include:
+
+Types of fruits (apple, banana, orange).
+Colors (red, blue, green).
+Nominal data is analyzed using frequency counts (e.g., how many apples vs. bananas) or the mode (the most frequently occurring category).
+
+2. Ordinal Level
+Ordinal data builds on nominal data by introducing order or ranking. While the categories can be ranked, the differences between them are not measurable or meaningful. Examples include:
+
+Education levels (high school, bachelor’s, master’s).
+Customer satisfaction ratings (poor, fair, good, excellent).
+Ordinal data can be summarized using the median (middle value) or mode, but not the mean (average), because the intervals between ranks are not consistent.
+
+3. Interval Level
+Interval data is numerical and the differences between values are meaningful. However, it lacks a true zero point meaning zero doesn’t indicate the absence of the characteristic being measured. Examples include:
+
+Difference between 10°C and 20°C is the same as between 30°C and 40°C
+IQ scores.
+Zero doesn’t mean “none.” For instance, 0°C doesn’t mean the absence of temperature—it’s just a point on the scale.
+
+Interval data allows for addition and subtraction but not multiplication or division because the zero point is arbitrary.
+
+4. Ratio Level
+Ratio data is the most advanced level of measurement. It has all the properties of interval data, plus a true zero point, which allows for a full range of mathematical operations.
+
+Zero indicates the complete absence of the characteristic being measured. For example, 0 kg means no weight and 0 income means no earnings.
+
+Examples include:
+
+Height, weight, income.
+Number of children in a family.
+Ratio data allows for all mathematical operations, making it the most versatile level of measurement.
+
+Summary Table for Clarity
+Level of Measurement	Examples	Mathematical Operations
+Nominal	Colors, types of fruits	Frequency counts, mode
+Ordinal	Education levels, satisfaction ratings	Median, mode (no mean)
+Interval	Temperature, IQ scores	Addition, subtraction
+Ratio	Height, weight, income	All operations (+, -, ×, ÷)
+Without statistics, data science would lack the foundation needed to draw meaningful insights from raw data. Statistics plays a crucial role in turning data into actionable knowledge, helping organizations spot trends, patterns and relationships that fuel innovation and growth. It connects data collection to informed decision-making, ensuring that the conclusions we draw are grounded in evidence.
+
+
+
+
+
+How is Statistics Used in Data Analysis?
+
+comments
+Statistics is the backbone of data analysis as it transforms raw numbers into actionable business insights. Instead of making decisions based on gut feelings, statistics helps us summarize data, spot patterns and make predictions. It helps in:
+
+Summarize large datasets quickly (averages, percentages, trends)
+To compare groups or categories
+To spot outliers or trends in user behavior
+To make predictions or recommendations
+Let’s walk through a simple example.
+
+Example: Predicting Customer Churn
+A telecom company wants to find out why some customers are leaving and how to reduce it. Here’s a small sample of the dataset:
+
+CustomerID	MonthlyCharges	Tenure	Contract	Churn
+1001	70	2	Month-to-Month	Yes
+1002	35	30	One year	No
+1003	55	10	Month-to-Month	Yes
+1004	40	12	Month-to-Month	No
+1005	80	1	Month-to-Month	Yes
+Now, Let's Apply Statistics
+1. Churn Rate
+Total customers = 5
+Churned = 3
+Churn Rate = (3 / 5) × 100 = 60%
+2. Average Tenure of Churned Customers
+Tenure = 2, 10, 1
+Average = (2 + 10 + 1) / 3 = 4.33 months
+3. Average Monthly Charges
+Churned: (70 + 55 + 80)/3 = 68.33
+Not Churned: (35 + 40)/2 = 37.5
+4. Churn by Contract Type
+Contract	Churned	Total	Churn Rate
+Month-to-Month	3	4	75%
+One year	0	1	0%
+What Can We Infer from These Stats?
+Customers with Month-to-Month contracts are more likely to leave — 75% churn rate.
+People who leave usually do so within the first few months (average tenure is 4.33).
+Churned users have higher monthly charges than others.
+From this, a data analyst can suggest actions like offering better rates to new customers or encouraging long-term contracts. These decisions are based on clear statistical evidence, not guesswork.
+
+While applying these statistical methods in data analysis, we typically use Python libraries like NumPy, Pandas, math and scipy as they help us perform calculations, summarize data and handle tabular datasets efficiently.
+
+Common Statistical Tools Used in Data Analysis
+Tool/Concept	Use in Data Analysis
+Mean, Median, Mode	Measure central tendency of data
+Standard Deviation	Measure spread/variability
+Percentages and Ratios	Compare parts of a whole
+Correlation	Check relationships between two variables
+Regression	Predict values and understand influence
+Hypothesis Testing	Validate assumptions about data
+Frequency Tables & Charts	Visualize distributions and categories
+In data analysis, statistics is not just about numbers — it's the key to understanding patterns, solving real problems and making decisions backed by data.
+
+
+
+
+
+Descriptive Statistic for Data Science
+
+comments
+Statistics is the foundation of data science. Descriptive statistics are simple tools that help us understand and summarize data. They show the basic features of a dataset, like the average, highest and lowest values and how spread out the numbers are. It's the first step in making sense of information.
+
+descriptive_statistics
+Descriptive Statistic
+Types of Descriptive Statistics
+There are three categories for standard classification of descriptive statistics methods, each serving different purposes in summarizing and describing data. They help us understand:
+
+Where the data centers (Measures of Central Tendency)
+How spread out the data is (Measure of Variability)
+How the data is distributed (Measures of Frequency Distribution)
+1. Measures of Central Tendency
+Statistical values that describe the central position within a dataset. There are three main measures of central tendency:
+
+measure_of_central_tendency
+Measures of Central Tendency
+Mean: is the sum of observations divided by the total number of observations. It is also defined as average which is the sum divided by count.
+
+x
+ˉ
+ = 
+n
+∑x
+​
+ 
+
+ where, 
+
+x = Observations
+n = number of terms
+Let's look at an example of how can we find the mean of a data set using python code implementation. Before its implementation we should have some basic knowledge about numpy and scipy.
+
+
+
+
+
+import numpy as np
+​
+# Sample Data
+arr = [5, 6, 11]
+​
+# Mean
+mean = np.mean(arr)
+​
+print("Mean = ", mean)
+
+Output
+Mean =  7.333333333333333
+Mode: The most frequently occurring value in the dataset. It’s useful for categorical data and in cases where knowing the most common choice is crucial.
+
+
+
+
+
+import scipy.stats as stats
+​
+# sample Data
+arr = [1, 2, 2, 3]
+​
+# Mode
+mode = stats.mode(arr)
+print("Mode = ", mode)
+Output: 
+
+Mode =  ModeResult(mode=array([2]), count=array([2]))
+
+Median: The median is the middle value in a sorted dataset. If the number of values is odd, it's the center value, if even, it's the average of the two middle values. It's often better than the mean for skewed data.
+
+
+
+
+
+import numpy as np
+​
+# sample Data
+arr = [1, 2, 3, 4]
+​
+# Median
+median = np.median(arr)
+​
+print("Median = ", median)
+
+Output
+Median =  2.5
+Note : All implementations are performed using numpy library in python. If you want to learn and understand more about it. Refer to the link.
+
+Central tendency measures are the foundation for understanding data distribution and identifying anomalies. For example, the mean can reveal trends, while the median highlights skewed distributions.
+
+2. Measure of Variability
+Knowing not just where the data centers but also how it spreads out is important. Measures of variability, also called measures of dispersion, help us spot the spread or distribution of observations in a dataset. They identifying outliers, assessing model assumptions and understanding data variability in relation to its mean. The key measures of variability include:
+
+1. Range : describes the difference between the largest and smallest data point in our data set. The bigger the range, the more the spread of data and vice versa. While easy to compute range is sensitive to outliers. This measure can provide a quick sense of the data spread but should be complemented with other statistics.
+
+Range = Largest data value - smallest data value 
+
+
+
+
+
+import numpy as np
+​
+# Sample Data
+arr = [1, 2, 3, 4, 5]
+​
+# Finding Max
+Maximum = max(arr)
+# Finding Min
+Minimum = min(arr)
+​
+# Difference Of Max and Min
+Range = Maximum-Minimum
+print("Maximum = {}, Minimum = {} and Range = {}".format(
+    Maximum, Minimum, Range))
+
+Output
+Maximum = 5, Minimum = 1 and Range = 4
+2. Variance: is defined as an average squared deviation from the mean. It is calculated by finding the difference between every data point and the average which is also known as the mean, squaring them, adding all of them and then dividing by the number of data points present in our data set.
+
+σ 
+2
+ = 
+N
+∑(x−μ) 
+2
+ 
+​
+ 
+
+where,
+
+x -> Observation under consideration
+N -> number of terms 
+μ -> Mean 
+
+
+
+
+import statistics
+​
+# sample data
+arr = [1, 2, 3, 4, 5]
+# variance
+print("Var = ", (statistics.variance(arr)))
+
+Output
+Var =  2.5
+3. Standard deviation: Standard deviation measures how much the data values differ from the mean. It is widely used in statistics and machine learning to understand data spread and model performance.
+
+It is defined as the square root of variance.
+A low standard deviation means values are close to the mean.
+A high standard deviation indicates greater variation in the dataset
+σ= 
+N
+∑(x−μ) 
+2
+ 
+​
+ 
+​
+  
+
+where, 
+
+x = Observation under consideration
+N = number of terms 
+μ = Mean
+
+
+
+
+import statistics
+arr = [1, 2, 3, 4, 5]
+print("Std = ", (statistics.stdev(arr)))
+
+Output
+Std =  1.5811388300841898
+Variability measures are important in residual analysis to check how well a model fits the data.
+
+3. Measures of Frequency Distribution
+A frequency distribution table is a summarized way to show how data points are distributed across different categories or intervals. It helps to identify patterns, outliers and the overall structure of the dataset. It's often the first step in understanding the dataset before applying more advanced analytical methods or creating visualizations like histograms or pie charts.
+
+Frequency Distribution Table Includes measure like:
+
+Data intervals or categories
+Frequency counts
+Relative frequencies (percentages)
+Cumulative frequencies when needed
+
+
+
+
+Introduction to Inferential Statistics
+
+comments
+Inferential statistics is an important tool that allows us to make predictions and conclusions about a population based on sample data. Unlike descriptive statistics, which only summarize data, inferential statistics let us test hypotheses, make estimates, and measure the uncertainty about our predictions.
+
+inferential_vs_descriptive_statistics.webpinferential_vs_descriptive_statistics.webp
+These tools are essential for evaluating models, testing assumptions, and supporting data-driven decision-making.
+
+For example, instead of surveying every voter in a country, we can survey a few thousand and still make reliable conclusions about the entire population’s opinion. Inferential statistics provides the tools to do this systematically and mathematically.
+
+Need for Inferential Statistics
+In real-world scenarios, analyzing an entire population is often impossible. Instead, we collect data from a sample and use inferential statistics to:
+
+Conclude the whole population.
+Test claims or hypotheses.
+Calculate confidence intervals and p-values to measure uncertainty.
+Make predictions with statistical models.
+Techniques in Inferential Statistics
+Inferential statistics offers several key methods for testing hypotheses, estimating population parameters, and making predictions. Here are the major techniques:
+
+1. Confidence Intervals: It gives us a range of values that likely includes the true population parameter. It helps quantify the uncertainty of an estimate. The formula for calculating a confidence interval for the mean is:
+
+CI= 
+x
+ˉ
+ ±Z 
+α/2
+​
+ × 
+n
+​
+ 
+σ
+​
+ 
+
+Where:
+
+x
+ˉ
+  is the sample mean
+Z 
+a/2
+​
+ ​ is the Z-value from the standard normal distribution (e.g., 1.96 for a 95% confidence interval)
+σ is the population standard deviation
+n is the sample size
+For example, if we measure the average height of 100 people, a 95% confidence interval gives us a range where the true population mean height is likely to fall. This helps gauge the precision of our estimate and compare models (like in A/B testing).
+
+2. Hypothesis Testing: Hypothesis testing is a formal procedure for testing claims or assumptions about data. It involves the following steps:
+
+Null Hypothesis (H₀): The default assumption, such as “there’s no difference between two models.”
+Alternative Hypothesis (H₁): The claim you aim to prove, such as “Model A performs better than Model B.”
+We collect data and compute a test statistic (such as Z for a Z-test or t for a T-test):
+
+Z= 
+n
+​
+ 
+σ
+​
+ 
+x
+ˉ
+ −μ 
+0
+​
+ 
+​
+ 
+
+Where:
+
+x
+ˉ
+  is the sample mean
+μ 
+0
+​
+ ​ is the hypothesized population mean
+σ is the population standard deviation
+n is the sample size
+After calculating the test statistic, we compare it with a critical value or use a p-value to decide whether to reject or fail to accept the null hypothesis. If the p-value is smaller than the significance level α (usually 0.05), we reject the null hypothesis.
+
+p-value=2⋅P(Z>∣z 
+obs
+​
+ ∣)
+
+Where 
+z 
+obs
+​
+ ​ is the observed test statistic, A small p-value suggests strong evidence against the null hypothesis.
+
+3. Central Limit Theorem: It states that the distribution of the sample mean will approximate a normal distribution as the sample size increases, regardless of the original population distribution. This is important because many statistical methods assume that data is normally distributed. The CLT can be mathematically expressed as:
+
+X
+ˉ
+ ∼N(μ, 
+n
+​
+ 
+σ
+​
+ )
+
+Where:
+
+μis the population mean
+σ is the population standard deviation
+n is the sample size
+This theorem allows us to apply normal distribution-based methods even when the original data is not normally distributed, such as in cases with skewed income or shopping behavior data.
+
+Errors in Inferential Statistics
+In hypothesis testing, Type I Error and Type II Error are key concepts:
+
+Type I Error occurs when we wrongly reject a true null hypothesis. The probability of making a Type I error is denoted by 
+α (the significance level).
+Type II Error occurs when we fail to reject a false null hypothesis. The probability of making a Type II error is denoted by 
+β and the power of the test is given by 
+1−β.
+The goal is to minimize these errors by carefully selecting sample sizes and significance levels.
+
+Parametric and Non-Parametric Tests
+Statistical tests help decide if the data support a hypothesis. They calculate a test statistic that shows how much the data differs from the assumption (null hypothesis). This is compared to a critical value or p-value to accept or reject the null.
+
+Parametric Tests: These tests assume that the data follows a specific distribution (often normal) and has consistent variance. They are typically used for continuous data. Examples include the Z-test, T-test, and ANOVA. These tests are effective for comparing models or measuring performance when the assumptions are met.
+Non-Parametric Tests: Non-parametric tests do not assume a specific distribution for the data, making them ideal for small samples or non-normal data, including categorical or ranked data. Examples include the Chi-Square test, Mann-Whitney U test, and Kruskal-Wallis test. They are useful when data is skewed or categorical, such as customer ratings or behaviors.
+Example: Evaluating a New Delivery Algorithm Using Inferential Statistics
+A quick commerce company wants to check if a new delivery algorithm reduces delivery times compared to the current system.
+
+Experiment Setup:
+
+100 orders split into two groups: 50 with the new algorithm, 50 with the current system.
+Delivery times for both groups are recorded.
+Steps
+1. Hypotheses:
+
+Null (H0): The New algorithm does not reduce delivery time.
+Alternative (H1): New algorithm reduces delivery time.
+2. Significance Level:
+
+Set at 0.05 (5% risk of wrongly rejecting H0).
+
+Type I error: Thinking the new system is better when it isn’t.
+Type II error: Missing a real improvement.
+3. Test Statistic: Compare average delivery times between the two groups
+
+4. Analysis:
+
+Calculate means and differences.
+Check if the data is roughly normal.
+5. Perform a t-test or z-test:
+
+If p-value < 0.05, reject H0 and conclude the new algorithm is better. Otherwise, no clear improvement.
+
+6. Confidence Interval: For example, a range of -5 to -2 minutes means deliveries are 2 to 5 minutes faster with the new system.
+
+
+
+
+
+Covariance and Correlation
+
+comments
+Covariance and correlation are the two key concepts in Statistics that help us analyze the relationship between two variables. Covariance measures how two variables change together, indicating whether they move in the same or opposite directions.
+
+independent_variables
+Relationship between Independent and dependent variables
+To understand this relationship better, consider factors like sunlight, water and soil nutrients (as shown in the image), which are independent variables that influence plant growth, which is our dependent variable.
+
+What is Covariance
+Covariance measures how two random variables change together. It is calculated by averaging the product of their deviations from their means. A positive value means they move in the same direction, while a negative value means they move in opposite directions.
+
+It can take any value between - infinity to +infinity, where the negative value represents the negative relationship whereas a positive value represents the positive relationship.
+it indicates the direction of a linear relationship, but it does not measure its strength in a standardized way.”
+It gives the direction of relationship between variables.
+Covariance Formula
+1. Sample Covariance
+
+Cov 
+S
+​
+ (X,Y)= 
+n−1
+1
+​
+ ∑ 
+i=1
+n
+​
+ (X 
+i
+​
+ − 
+X
+ )(Y 
+i
+​
+ − 
+Y
+ )
+
+Where:
+
+X 
+i
+​
+ ​: The 
+i 
+th
+  value of the variable 
+X in the sample.
+Y 
+i
+​
+ ​: The 
+i 
+th
+  value of the variable 
+Y in the sample.
+X
+ : The sample mean of variable 
+X (i.e., the average of all 
+X 
+i
+​
+ ​ values in the sample).
+Y
+ : The sample mean of variable 
+Y (i.e., the average of all 
+Y 
+i
+​
+ ​ values in the sample).
+n: The number of data points in the sample.
+∑: The summation symbol means we sum the products of the deviations for all the data points.
+n−1: This is the degrees of freedom. When working with a sample, we divide by 
+n−1 to correct for the bias introduced by estimating the population covariance based on the sample data. This is known as Bessel's correction.
+2. Population Covariance
+
+Cov 
+P
+​
+ (X,Y)= 
+n
+1
+​
+ ∑ 
+i=1
+n
+​
+ (X 
+i
+​
+ −μ 
+X
+​
+ )(Y 
+i
+​
+ −μ 
+Y
+​
+ )
+
+Where:
+
+X 
+i
+​
+ ​: The 
+i 
+th
+  value of the variable 
+X in the population.
+Y 
+i
+​
+ ​: The 
+i 
+th
+  value of the variable 
+Y in the population.
+μ 
+X
+​
+ : The population mean of variable 
+X (i.e., the average of all 
+X 
+i
+​
+ ​ values in the population).
+μ 
+Y
+​
+ : The population mean of variable 
+Y (i.e., the average of all 
+Y 
+i
+​
+ ​ values in the population).
+n: The total number of data points in the population.
+∑: The summation symbol means we sum the products of the deviations for all the data points.
+n: In the case of population covariance, we divide by 
+n because we are using the entire population data. There’s no need for Bessel’s correction since we’re not estimating anything.
+Types of Covariance
+Positive Covariance: When one variable increases, the other variable tends to increase as well and vice versa.
+Negative Covariance: When one variable increases, the other variable tends to decrease.
+Zero Covariance: There is no linear relationship between the two variables; they move independently of each other.
+Example
+covariance
+Covariance
+What is Correlation
+Correlation is a standardized measure of the strength and direction of the linear relationship between two variables. It is derived from covariance and ranges between -1 and 1. Unlike covariance, which only indicates the direction of the relationship, correlation provides a standardized measure.
+
+Positive Correlation (close to +1): As one variable increases, the other variable also tends to increase.
+Negative Correlation (close to -1): As one variable increases, the other variable tends to decrease.
+Zero Correlation: There is no linear relationship between the variables.
+The correlation coefficient 
+ρ for variables X and Y is defined as:
+
+Correlation takes values between -1 to +1, wherein values close to +1 represents strong positive correlation and values close to -1 represents strong negative correlation.
+The variables may be negatively related (i.e., move in opposite directions).
+It gives the direction and strength of relationship between variables.
+Correlation Formula
+Corr(x,y)= 
+∑ 
+i=1
+n
+​
+ (x 
+i
+​
+ − 
+x
+ˉ
+ ) 
+2
+ ∑ 
+i=1
+n
+​
+ (y 
+i
+​
+ − 
+y
+ˉ
+​
+ ) 
+2
+ 
+​
+ 
+∑ 
+i=1
+n
+​
+ (x 
+i
+​
+ − 
+x
+ˉ
+ )(y 
+i
+​
+ − 
+y
+ˉ
+​
+ )
+​
+ 
+
+Here,
+
+x' and y' = mean of given sample set
+n = total no of sample
+x 
+i
+​
+  and 
+y 
+i
+​
+  = individual sample of set
+Example
+Correlation
+Correlation
+Covariance vs. Correlation
+Covariance	Correlation
+Covariance is a measure of how much two random variables vary together	Correlation is a statistical measure that indicates how strongly two variables are related.
+Involves the relationship between two variables or data sets	Involves the relationship between multiple variables as well
+Correlation (specifically Pearson correlation) measures the relationship between two variables.
+
+Lie between -infinity and +infinity	Lie between -1 and +1
+Measure of correlation	Scaled version of covariance
+Provides direction of relationship	Provides direction and strength of relationship
+Dependent on scale of variable	Independent on scale of variable
+Have dimensions	Dimensionless
+They key difference is that Covariance shows the direction of the relationship between variables, while correlation shows both the direction and strength in a standardized form.
+
+Applications of Covariance
+Finance: Helps analyze how assets move together (risk diversification)
+Economics: Studies relationships between economic indicators
+Signal Processing: Used for analyzing patterns in signals
+Environmental Science: Examines relationships like temperature vs humidity
+Applications of Correlation
+Market Analysis: Understand customer behavior vs sales
+Healthcare: Analyze relationships between health variables
+Weather Forecasting: Study links between weather factors
+Machine Learning: Feature selection based on relationships
+
+
